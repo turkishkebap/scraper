@@ -1,0 +1,17 @@
+heroku3
+pyrogram==1.3.6
+telethon
+pyromod
+tgcrypto
+requests
+Pillow
+sqlalchemy~=1.3.23
+psycopg2-binary
+feedparser
+telethon-tgcrypto
+DateTime
+sqlalchemy==1.3.23
+python-dotenv
+gitpython
+hachoir
+aiofiles
