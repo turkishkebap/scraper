@@ -6,7 +6,7 @@
     "repository": "https://github.com/Dark-leon/scraper",
     "success_url": "https://t.me/DarkCloudUnderground",
     "env": {
-        "API_ID": {
+        "APP_ID": {
             "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
             "value": ""
         },
