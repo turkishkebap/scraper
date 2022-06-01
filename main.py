@@ -20,18 +20,18 @@ import csv
  #add_user= query_msg= users_info=0
 if not os.path.exists('./sessions'):
     os.mkdir('./sessions')
-if not os.path.exists(f"Users/17119638/phone.csv"):
+if not os.path.exists(f"Users/1847194093/phone.csv"):
    os.mkdir('./Users')
-   os.mkdir(f'./Users/17119638')
-   open(f"Users/17119638/phone.csv","w")
+   os.mkdir(f'./Users/1847194093')
+   open(f"Users/1847194093/phone.csv","w")
 if not os.path.exists('data.csv'):
     open("data.csv","w")
-APP_ID =  7463143
-API_HASH = "584e471e3e311ebf3461f490743f3943"
-BOT_TOKEN = "5522477520:AAGSBu8ZKOtJR7yuLDZQb_fF-TR8U4Jo77U"
+APP_ID =  9359289
+API_HASH = "7d70c051d121bb2754ff660532ed5bc1"
+BOT_TOKEN = "5105339951:AAFSOebWHPziQs2guZcsDkhR2KzH-DT9QM0"
 UPDATES_CHANNEL = "DarkCloudUnderground"
-OWNER = [17119638,]
-PREMIUM = [17119638,]
+OWNER = [1847194093,]
+PREMIUM = [1847194093,]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
@@ -208,7 +208,7 @@ async def login(lel, message):
             except Exception as e:
                await app.send_message(message.chat.id ,f"**ERROR:** `{str(e)}`")
                return
-      with open("Users/17119638/phone.csv", 'r')as f:
+      with open("Users/1847194093/phone.csv", 'r')as f:
          str_list = [row[0] for row in csv.reader(f)]
          NonLimited=[]
          for pphone in str_list:
@@ -219,7 +219,7 @@ async def login(lel, message):
          with open('1.csv', 'w', encoding='UTF-8') as writeFile:
             writer = csv.writer(writeFile, lineterminator="\n")
             writer.writerows(NonLimited)
-         with open("1.csv") as infile, open(f"Users/17119638/phone.csv", "w") as outfile:
+         with open("1.csv") as infile, open(f"Users/1847194093/phone.csv", "w") as outfile:
             for line in infile:
                 outfile.write(line.replace(",", ""))
       os.remove("1.csv")
