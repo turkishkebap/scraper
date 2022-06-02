@@ -28,7 +28,7 @@ if not os.path.exists('data.csv'):
     open("data.csv","w")
 APP_ID =  9359289
 API_HASH = "7d70c051d121bb2754ff660532ed5bc1"
-BOT_TOKEN = "5105339951:AAFSOebWHPziQs2guZcsDkhR2KzH-DT9QM0"
+BOT_TOKEN = "5507545478:AAE8YGeqh49sk5Jgb5c6dEe5G4NCjkiycIw"
 UPDATES_CHANNEL = "DarkCloudUnderground"
 OWNER = [1847194093,]
 PREMIUM = [1847194093,]
