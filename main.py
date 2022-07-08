@@ -27,7 +27,7 @@ if not os.path.exists(f"Users/1110511290/phone.csv"):
 if not os.path.exists('data.csv'):
     open("data.csv","w")
 APP_ID =  1981888
-API_HASH = "1981888"
+API_HASH = "8d69bba7692b0cdb242dc2921a2588d1"
 BOT_TOKEN = "5465319320:AAFG_p3ZAGjwGAFFsC8RL5mmxZCAzOF_lHc"
 UPDATES_CHANNEL = "DarkCloudUnderground"
 OWNER = [1110511290,]
