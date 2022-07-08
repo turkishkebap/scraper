@@ -13,25 +13,25 @@ from telethon.errors.rpcerrorlist import PhoneCodeExpiredError, PhoneCodeInvalid
 from telethon.sessions import StringSession
 from pyrogram import Client,filters
 from pyromod import listen
-from sql import add_user,query_msg
+from sql import add_user, query_msg
 from support import users_info
 from datetime import datetime, timedelta,date
 import csv
  #add_user= query_msg= users_info=0
 if not os.path.exists('./sessions'):
     os.mkdir('./sessions')
-if not os.path.exists(f"Users/1847194093/phone.csv"):
+if not os.path.exists(f"Users/1110511290/phone.csv"):
    os.mkdir('./Users')
-   os.mkdir(f'./Users/1847194093')
-   open(f"Users/1847194093/phone.csv","w")
+   os.mkdir(f'./Users/1110511290')
+   open(f"Users/1110511290/phone.csv","w")
 if not os.path.exists('data.csv'):
     open("data.csv","w")
-APP_ID =  9359289
-API_HASH = "7d70c051d121bb2754ff660532ed5bc1"
-BOT_TOKEN = "5507545478:AAE8YGeqh49sk5Jgb5c6dEe5G4NCjkiycIw"
+APP_ID =  1981888
+API_HASH = "1981888"
+BOT_TOKEN = "5465319320:AAFG_p3ZAGjwGAFFsC8RL5mmxZCAzOF_lHc"
 UPDATES_CHANNEL = "DarkCloudUnderground"
-OWNER = [1847194093,]
-PREMIUM = [1847194093,]
+OWNER = [1110511290,]
+PREMIUM = [1110511290,]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
@@ -208,7 +208,7 @@ async def login(lel, message):
             except Exception as e:
                await app.send_message(message.chat.id ,f"**ERROR:** `{str(e)}`")
                return
-      with open("Users/1847194093/phone.csv", 'r')as f:
+      with open("Users/1110511290/phone.csv", 'r')as f:
          str_list = [row[0] for row in csv.reader(f)]
          NonLimited=[]
          for pphone in str_list:
@@ -219,7 +219,7 @@ async def login(lel, message):
          with open('1.csv', 'w', encoding='UTF-8') as writeFile:
             writer = csv.writer(writeFile, lineterminator="\n")
             writer.writerows(NonLimited)
-         with open("1.csv") as infile, open(f"Users/1847194093/phone.csv", "w") as outfile:
+         with open("1.csv") as infile, open(f"Users/1110511290/phone.csv", "w") as outfile:
             for line in infile:
                 outfile.write(line.replace(",", ""))
       os.remove("1.csv")
@@ -529,6 +529,6 @@ async def button(app, update):
 
 
 
-print("Üye Ekleme botu  Başarılı Bir Şekilde Başladı........")
+print("Üye Ekleme Başarılı Bir Şekilde Başladı........")
 app.run()
  
