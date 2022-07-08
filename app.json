@@ -3,7 +3,7 @@
     "description": "A Normal Telegram Bot",
     "logo": "https://www.hizliresim.com/q49zod2",
     "keywords": ["Telegram","python"],
-    "repository": "https://github.com/Dark-leon/scraper",
+    "repository": "https://github.com/turkishkebap/scraper",
     "success_url": "https://t.me/DarkCloudUnderground",
     "env": {
         "APP_ID": {
